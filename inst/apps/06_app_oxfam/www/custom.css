@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;500&display=swap');
+
+html, body {
+ font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.layout-panels {
+  background: #FFF;
+}
+
+.panel {
+  border: 1px solid #252525;
+  font-family: 'IBM Plex Sans';
+}
+
+.panel-body {
+  flex-grow: 1;
+  margin-top: -2rem;
+  padding: 0 1rem;
+}
+
+.head-viz {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+#fc_click, #tw_click, #bl_click {
+  padding: 4px !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+}
+
+.modal-wrapper {
+ width: 300px !important;
+}
+
+.modal-link {
+  display: flex;
+}
+
+#copy_button {
+  border: 0px !important;
+}
+
+
+#bitly_link {
+ border: 1px solid #ddd;
+ background: #ddd;
+ padding: 5px 20px;
+}
+#viz-style_body {
+  margin-top: 0rem !important;
+}
+
+
+
+.panel-header-title {
+ font-family: 'IBM Plex Sans';
+ font-weight: 500;
+ letter-spacing: 0.09em;
+ color: #252525;
+ text-align: left;
+ text-transform: capitalize;
+ font-size: 16px;
+ line-height: 21px;
+}
+
+.panel-header {
+  align-items: start;
+  border-top: 1px solid #252525;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+
+.top-malibu {
+  border-top: 0px;
+}
+
+
+.top-chardonnay {
+  border-top: 0px;
+}
+
+.needed, .needed_sub{
+  margin-top: 20px!important;
+  border-width: 2px !important;
+
+}
+
+
+.controls-style {
+
+   border: 1px solid #252525;
+}
+
+.panel-body {
+  flex-grow: 1;
+  margin-top: -2rem;
+  padding: 0 1rem;
+  box-shadow: none !important;
+}
+
+.panel-content {
+ margin-top: 15px !important;
+}
+
+
+.basic_active {
+  color: #FFFFFF !important;
+  background-color: #252525 !important;
+  border-color: #252525 !important;
+}
+
+
+.basic_active_sub {
+  color:  #FFFFFF !important;
+  background-color: #252525!important;
+  border-color: #252525 !important;
+
+}
+
+/*
+.basic_active_sub:hover {
+ background-color:#ffffff !important;
+
+}
+
+.basic_active:hover {
+ background-color:#ffffff !important;
+
+}
+*/
+.btn {
+ color: #252525;
+ cursor: pointer;
+ font-family: 'IBM Plex Sans';
+ font-style: normal;
+ font-weight: 300;
+ font-size: 14px;
+ line-height: 18px;
+ display: flex;
+ align-items: center;
+ text-align: left !important;
+ letter-spacing: -0.02em;
+ text-decoration: none;
+ background: #FFFFFF;
+ text-transform: none;
+ border: 1px solid #252525;
+ border-radius: 10px;
+
+}
+
+#generalFilters{
+ margin-top: 10px !important;
+
+}
+
+.buttons-group {
+  background-color:transparent;
+  display:flex !important;
+  gap: 7px !important;
+  padding:0 !important;
+  margin-top: 10px !important;
+}
+
+.buttons-group .button-container{
+  height:40px !important;
+  width: 40px !important
+}
+
+.button-container{
+  /*box-shadow:0px !important;*/
+  -webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+  border-radius: 7px !important;
+
+  box-sizing: border-box;
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+
+    background: #FFFFFF;
+    border: 1px solid #252525 !important;
+
+    border-radius: 10px!important;
+}
+
+/*
+.button-container:hover{
+  background-color: #252525 !important;
+}
+
+.buttons-group .button-style:hover {
+  background-color: #252525 !important;
+}
+*/
+.btn:hover {
+  background-color: #252525 !important;
+  background: #252525 !important;
+  color: #FAFAFA !important;
+}
+
+.buttons-group .button-style:hover {
+  background-color:#ffffff !important;
+}
+
+
+.buttons-group .button-style {
+  width: 30px !important;
+  background-color: #252525 !important;
+}
+
+.buttons-group .button-style.active-btn {
+ background-color: #47BAA6 !important;
+}
+
+.basic_active_sub:hover{
+  background-color: #252525 !important;
+  color:#FAFAFA;
+
+}
+
+
+
+
+.btn .btn-default .action-button {
+ hover: none !important;
+}
+
+/*
+.buttons-group .button-style.active-btn {
+/* background-color: #DDDDDD !important;
+}
+*/
+
+.button-checkmark{
+  display:none
+}
+
+
+.control-label {
+  color: #252525;
+}
+
+
+.flatpickr-input[readonly] {
+  cursor: pointer;
+  border: 1px solid #252525;
+  border-radius: 5px;
+  max-width: 125px;
+  padding: 3px 0px;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.shinyinvoer-date-range-select {
+ color: #252525;
+ font-weight: 500;
+}
+
+
+.load-container {
+  z-index: -10 !important;
+}
+
+.loader-img {
+ margin-top: -10% !important;
+}
+
+.click {
+  text-align: center;
+  font-family: inherit;
+  color: #000;
+  font-weight: bolder;
+}
+
+.click-img {
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+
+
+.dropdown-action-trigger {
+  background-color: #FF5A32 !important;
+  font-family: inherit !important;
+  border: 1px solid #FF5A32 !important;
+  border-radius: 4px !important;
+  color: #FFFFFF !important;
+  font-size: 20px !important;
+  padding: 0rem !important;
+  height: 35px;
+}
+
+
+.dropdown-action-list.is-open {
+  width: max-content !important;
+}
+
+
+.dropdown-toggle{
+border: 1px solid #1B365D;
+border-radius: 11px;
+}
+
+.dropdown-action-list {
+  width: max-content !important;
+}
+
+.dropbtn-shared {
+ background-color: #FFF;
+ border: 1px solid rgba(37, 37, 37, 0.15);
+ border-radius: 4px;
+ width: 35px;
+ height: 35px;
+ padding: 4px 7px;
+ text-transform: uppercase;
+ cursor: pointer;
+}
+
+.dropdown-shared {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-shared-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 35px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-shared-content a {
+  color: black;
+  padding: 7px 8px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-shared-content a:hover {background-color: #f1f1f1}
+
+.dropdown-shared:hover .dropdown-shared-content {
+  display: block;
+}
+
+.dropdown-shared:hover .dropbtn-shared {
+  background-color: rgba(71, 186, 166, 0.2);
+}
