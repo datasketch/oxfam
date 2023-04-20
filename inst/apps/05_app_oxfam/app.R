@@ -1106,6 +1106,8 @@ Interagir com estes dados e tornar-se um agente de mudança para &hashtags=Vacci
           opts$suffix_num <- "/100"
         }
       }
+    } else {
+      opts$theme$plot_margin_right <- 50
     }
 
     if ("excess_mortality" %in% slug_selected()) {
