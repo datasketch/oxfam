@@ -178,7 +178,16 @@ server <-  function(input, output, session) {
     if (!is.null(click_viz$id)) id_click <- paste0("id_click=", click_viz$id, "%26")
     if (!is.null(click_viz$cat)) cat_click <- paste0("cat_click=",click_viz$cat, "%26")
 
-    long_url <- paste0("https://datasketch.shinyapps.io/oxfam_app/?", gsub("%26", "&",
+    if (!is.null(url_par()$inputs$dash)) {
+      if(url_par()$inputs$dash == "three") url_viz <- "https://vacunasparalagente.org/efectos-en-la-sociedad/?"
+      if(url_par()$inputs$dash == "two") url_viz <-   "https://vacunasparalagente.org/evolucion-del-covid-19/?"
+      if(url_par()$inputs$dash == "four") url_viz <-   "https://vacunasparalagente.org/negocio-de-las-vacunas/?"
+      if(url_par()$inputs$dash == "one") url_viz <-   "https://vacunasparalagente.org/poblacion-vacunada/?"
+    }
+    else url_viz <- "https://vacunasparalagente.org/todos-los-indicadores/?"
+
+
+    long_url <- paste0( url_viz, gsub("%26", "&",
                                                                            paste0(dash, viz, slug, slug_comp, pais, agg, und, fech, fech_form, id_click, cat_click, "lang=", lang())))
     shared_link$short_url <- shorten_url(long_url, "1ded0052e90265f03473cd1b597f0c45bb83d578")
   })
@@ -420,13 +429,13 @@ Interagir com estes dados e tornar-se um agente de mudança para &hashtags=Vacci
     show <- FALSE
     if (viz_select() %in% "scatter") {
       show <- TRUE
-  }
-  if (viz_select() %in% "line") {
-    show <- TRUE
-    if (input$id_slug %in% c("stringency_index", "ghs_index")) {
-      show <- FALSE
     }
-  }
+    if (viz_select() %in% "line") {
+      show <- TRUE
+      if (input$id_slug %in% c("stringency_index", "ghs_index")) {
+        show <- FALSE
+      }
+    }
     show
   })
 
@@ -1159,9 +1168,9 @@ Interagir com estes dados e tornar-se um agente de mudança para &hashtags=Vacci
     hcoptslang$thousandsSep <- ","
     hcoptslang$decimalPoint <- "."
     options(highcharter.lang = hcoptslang)
-
+    data <- data_viz()
     do.call(viz_func(), list(
-      data = data_viz(),
+      data = data,
       var_gnm = var_cat,
       var_cat = var_cat,
       var_dat = var_date,
