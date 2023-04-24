@@ -78,7 +78,7 @@ ui <- panelsPage(
         id = "controls-style",
         collapse = FALSE,
         can_collapse = FALSE,
-        width = 300,
+        width = 280,
         body = div(
           uiOutput("controls")
         )
@@ -105,7 +105,7 @@ ui <- panelsPage(
         id = "detail-style",
         collapse = FALSE,
         can_collapse = FALSE,
-        width = 300,
+        width = 280,
         body = div(
           uiOutput("click_info")
         ),
