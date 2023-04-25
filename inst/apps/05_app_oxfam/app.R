@@ -735,21 +735,28 @@ Interagir com estes dados e tornar-se um agente de mudança para &hashtags=Vacci
 
   min_date_sel <- reactive({
     req(min_date())
+    print(min_date())
     sel <- min_date()
     if (!is.null(url_par()$inputs$fech)) {
-      sel <- strsplit(url_par()$inputs$fech, ",") |> unlist()
-      sel <- sel[1]
+      sel_url <- strsplit(url_par()$inputs$fech, ",") |> unlist()
+      sel_url <- sel_url[1]
+      if(sel <=  sel_url) sel <-sel_url
     }
+    print(sel)
     sel
   })
 
   max_date_sel <- reactive({
     req(max_date())
     sel <- max_date()
+    print(max_date())
     if (!is.null(url_par()$inputs$fech)) {
-      sel <- strsplit(url_par()$inputs$fech, ",") |> unlist()
-      sel <- sel[length(sel)]
+      sel_url <- strsplit(url_par()$inputs$fech, ",") |> unlist()
+      sel_url <- sel_url[length(sel_url)]
+      if(sel >=  sel_url  ) sel <- sel_url
+
     }
+    print(sel)
     sel
   })
 
