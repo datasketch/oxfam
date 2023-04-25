@@ -37,7 +37,7 @@ jobs:
           Rscript -e  "devtools::install_github('dreamRs/d3.format',  dependencies =TRUE)"
           Rscript -e  "devtools::install_github('datasketch/makeup',  dependencies =TRUE, ref='c94b29d21665ef8778fba4489cbc4b9634421308')"
           Rscript -e  "devtools::install_github('datasketch/homodatum', dependencies =TRUE,ref='0eee9dfa1ff48ab37a4b267103bf6935d9a97cda')"
-          Rscript -e  "devtools::install_github('datasketch/paletero', dependencies =TRUE ref='2e25920b6c71651f153684e669913196e9a8a79a')"
+          Rscript -e  "devtools::install_github('datasketch/paletero', dependencies =TRUE, ref='2e25920b6c71651f153684e669913196e9a8a79a')"
           Rscript -e  "devtools::install_github('datasketch/dstools', dependencies =TRUE, ref='6bd2143a13185cc0acf9552b4858db1526ebe831')"
           Rscript -e  "devtools::install_github('datasketch/geodato', dependencies =TRUE, ref='fa77eb86f2f0aec3e5bc5c912e6c1e19ec80f031')"
           Rscript -e  "devtools::install_github('datasketch/dsdataprep', dependencies =TRUE, ref='4ce8584feb4a1a9a098d589b91ff5386cd07a7b3')"
